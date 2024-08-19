@@ -23,7 +23,7 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
         <input
@@ -40,7 +40,7 @@ function Login() {
         />
         <button type="submit">Login</button>
       </form>
-      <p>{message}</p>
+      {message && <p>{message}</p>}
       <Link to="/register">Register here</Link>
     </div>
   );

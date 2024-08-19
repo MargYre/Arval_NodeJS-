@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '../styles/Form.css';
 
+
 function Register() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -27,7 +28,7 @@ function Register() {
   };
 
   return (
-    <div>
+    <div className="login-container">  {/* Utilisation de la même classe que pour le login */}
       <h2>Register</h2>
       <form onSubmit={handleRegister}>
         <input
@@ -50,7 +51,7 @@ function Register() {
         />
         <button type="submit">Register</button>
       </form>
-      <p>{message}</p>
+      {message && <p>{message}</p>}
       <Link to="/">Login here</Link>
     </div>
   );
