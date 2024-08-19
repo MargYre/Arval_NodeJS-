@@ -1,0 +1,30 @@
+// src/styles/packageOption.scss
+
+.packageOptions { 
+  border-top-right-radius: 50px;
+  flex: 1 1 auto;
+  max-width: 500px;
+  margin-bottom: 20px;
+  box-sizing: border-box; 
+  overflow-wrap: break-word;
+  font-family: sans-serif;
+
+  h3 {
+    color: #2c3e50;
+    margin-left: 50px;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    li {
+      list-style-type: none;
+      padding: 8px;
+      max-width: 300px;
+    }
+  }
+}

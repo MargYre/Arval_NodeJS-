@@ -1,0 +1,59 @@
+// src/styles/mainContent.scss
+
+.main-content {
+  width: 100%; 
+  max-width: 1000px;
+  margin: 0 auto 120px auto;
+  padding: 20px;
+
+  h1 {
+    color: green;
+    font-size: 2em;
+    font-weight: normal;
+    font-family: "monospace", sans-serif;
+  }
+
+  h1.centered-title {
+    text-align: center; 
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'monospace', sans-serif;
+    
+  }
+
+  h2 {
+    color: green;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .allOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .car-icon {
+    width: 200px;
+    height: auto;
+    position: absolute; 
+    top: -8%; 
+    left: 75%; 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Media Query pour cacher l'icône sur les petits écrans */
+@media (max-width: 768px) {
+  .car-icon {
+    display: none;
+  }
+}
